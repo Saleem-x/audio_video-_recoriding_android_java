@@ -17,22 +17,22 @@
         android:text="Start Recording"
         android:layout_below="@id/recordVideoButton"
         android:layout_marginTop="16dp" />
-
-<!--    <Button-->
-<!--        android:id="@+id/playAudioButton"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Play Audio"-->
-<!--        android:layout_below="@id/recordAudioButton"-->
-<!--        android:layout_marginTop="16dp" />-->
-
+    <Button
+        android:id="@+id/uploadAudioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Audio"
+        android:layout_below="@id/recordAudioButton"
+        android:layout_marginTop="16dp"
+        />
     <Button
         android:id="@+id/playVideoButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Play Video"
-        android:layout_below="@id/recordAudioButton"
-        android:layout_marginTop="16dp" />
+        android:layout_below="@id/uploadAudioButton"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"/>
 
     <RelativeLayout
         android:id="@+id/videoContainer"
@@ -58,4 +58,13 @@
 
     </RelativeLayout>
 
+    <!-- Upload Video Button -->
+    <Button
+        android:id="@+id/uploadVideoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Video"
+        android:layout_below="@id/videoContainer"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" />
 </RelativeLayout>
